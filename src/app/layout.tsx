@@ -1,27 +1,56 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Newsreader, Schibsted_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Serif — the voice: headlines + essay prose (with italic accents)
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Sans — structure: nav, UI, labels
+const schibsted = Schibsted_Grotesk({
+  variable: "--font-schibsted",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
+
+// Mono — data: dates, durations, section indices, the ticker
+const plex = IBM_Plex_Mono({
+  variable: "--font-plex",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  display: "swap",
+});
+
+const TITLE = "Michael Scott Cohen — Operator, Investor, Harper+Scott";
+const DESCRIPTION =
+  "Michael Scott Cohen builds the physical things that carry the world's largest brands. Co-Founder & CEO of Harper+Scott ($57.5M). Writing, film, and an unromantic point of view on the work.";
 
 export const metadata: Metadata = {
-  title: "Michael Scott Cohen — Co-Founder & CEO, Harper+Scott",
-  description:
-    "Michael Scott Cohen is the Co-Founder & CEO of Harper+Scott Inc., a creative agency valued at $57.5M. YPO member, entrepreneur, and brand builder working with Sephora, L'Oreal Paris, and Fortune 500 companies.",
-  openGraph: {
-    title: "Michael Scott Cohen — Co-Founder & CEO, Harper+Scott",
-    description:
-      "Entrepreneur, brand builder, and Co-Founder of Harper+Scott Inc. Building iconic branded experiences for the world's most recognized companies.",
-    type: "website",
+  metadataBase: new URL("https://michaelscottcohen.com"),
+  title: {
+    default: TITLE,
+    template: "%s — Michael Scott Cohen",
   },
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    type: "website",
+    siteName: "Michael Scott Cohen",
+    url: "https://michaelscottcohen.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
+  authors: [{ name: "Michael Scott Cohen" }],
 };
 
 export default function RootLayout({
@@ -30,9 +59,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${newsreader.variable} ${schibsted.variable} ${plex.variable} grain antialiased`}
       >
         {children}
       </body>

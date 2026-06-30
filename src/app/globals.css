@@ -1,23 +1,187 @@
 @import "tailwindcss";
 
-@theme inline {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
-  --color-accent: #c89b3c;
-  --color-accent-light: #e4c066;
-  --color-muted: #a3a3a3;
-  --color-card: #141414;
-  --color-card-border: #262626;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/*
+  MICHAEL SCOTT COHEN — quiet-luxury operator site
+  Palette: warm ivory paper, warm near-black ink, warm-gray stone,
+  hairline taupe rules, a single restrained bronze used only as a 1px accent.
+  Near-monochrome by intent — restraint is the brand. No gradients.
+*/
+
+@theme {
+  /* Surface */
+  --color-paper: #f3efe6; /* ivory base */
+  --color-paper-deep: #ece6d8; /* alternating section */
+  --color-paper-shade: #e7e0d0; /* cards / wells */
+
+  /* Ink */
+  --color-ink: #181612; /* warm near-black, primary text */
+  --color-ink-soft: #2a2620;
+
+  /* Stone (muted) */
+  --color-stone: #5f5a4d; /* secondary text */
+  --color-stone-light: #8a8474;
+
+  /* Lines + accent */
+  --color-rule: #d7cfbd; /* hairline */
+  --color-rule-strong: #c4bba6;
+  --color-bronze: #715c39; /* the only accent — used sparingly */
+
+  /* Type — each family has exactly one job */
+  --font-serif: var(--font-newsreader), "GT Sectra", Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex), ui-monospace, "SFMono-Regular", monospace;
+
+  /* Motion */
+  --ease-quiet: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-body {
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
-}
+/* ---------- Base ---------- */
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Keep anchored sections clear of the fixed nav */
+section[id],
+header[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "kern";
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-bronze);
+  outline-offset: 3px;
+}
+
+/* Paper grain — a whisper of warmth, no gradient. Fixed, non-interactive. */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0 0.07  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ---------- Type helpers ---------- */
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-stone);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+
+.serif-italic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.prose-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: -0.003em;
+}
+
+/* Hairline rule fill */
+.rule {
+  background-color: var(--color-rule);
+}
+
+/* ---------- Motion: page-load staggered reveal ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  animation: rise 1s var(--ease-quiet) forwards;
+}
+
+/* ---------- Marquee (client ticker) ---------- */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 48s linear infinite;
+  will-change: transform;
+}
+
+.marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ---------- Link underline grow (solid hairline, not a color gradient) ---------- */
+
+.uline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.45s var(--ease-quiet);
+  padding-bottom: 2px;
+}
+
+.uline:hover {
+  background-size: 100% 1px;
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    animation: none;
+  }
+  .marquee-track {
+    animation: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
 }
