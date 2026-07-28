@@ -54,10 +54,10 @@ export default function SiteNav() {
             </a>
           ))}
           <a
-            href="#subscribe"
+            href="#notes"
             className="text-[0.82rem] uppercase tracking-[0.18em] text-ink"
           >
-            <span className="uline">Subscribe</span>
+            <span className="uline">The Note</span>
           </a>
         </nav>
 
@@ -110,11 +110,11 @@ export default function SiteNav() {
             </a>
           ))}
           <a
-            href="#subscribe"
+            href="#notes"
             onClick={() => setOpen(false)}
             className="display mt-6 text-2xl text-bronze"
           >
-            Subscribe →
+            The Operator&apos;s Note →
           </a>
         </nav>
       </div>

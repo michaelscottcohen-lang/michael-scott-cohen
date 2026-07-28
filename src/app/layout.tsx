@@ -27,9 +27,9 @@ const plex = IBM_Plex_Mono({
   display: "swap",
 });
 
-const TITLE = "Michael Scott Cohen — Operator, Investor, Harper+Scott";
+const TITLE = "Michael Scott Cohen — Builder, Operator, Investor";
 const DESCRIPTION =
-  "Michael Scott Cohen builds the physical things that carry the world's largest brands. Co-Founder & CEO of Harper+Scott ($57.5M). Writing, film, and an unromantic point of view on the work.";
+  "Michael Scott Cohen is a New York builder, operator, investor, and co-founder of Harper+Scott. The record, operating principles, and The Operator's Note.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://michaelscottcohen.com"),
