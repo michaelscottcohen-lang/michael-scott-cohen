@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Newsreader, Schibsted_Grotesk, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import "./v4.css";
 
-// Serif — the voice: headlines + essay prose (with italic accents)
 const newsreader = Newsreader({
   variable: "--font-newsreader",
   subsets: ["latin"],
@@ -11,7 +11,6 @@ const newsreader = Newsreader({
   display: "swap",
 });
 
-// Sans — structure: nav, UI, labels
 const schibsted = Schibsted_Grotesk({
   variable: "--font-schibsted",
   subsets: ["latin"],
@@ -19,7 +18,6 @@ const schibsted = Schibsted_Grotesk({
   display: "swap",
 });
 
-// Mono — data: dates, durations, section indices, the ticker
 const plex = IBM_Plex_Mono({
   variable: "--font-plex",
   subsets: ["latin"],
@@ -29,7 +27,7 @@ const plex = IBM_Plex_Mono({
 
 const TITLE = "Michael Scott Cohen — Builder, Operator, Investor";
 const DESCRIPTION =
-  "Michael Scott Cohen is a New York builder, operator, investor, and co-founder of Harper+Scott. The record, operating principles, and The Operator's Note.";
+  "Michael Scott Cohen is a New York founder, operator, investor, and co-founder of Harper+Scott. Watch recent videos, read selected posts, and subscribe to The Operator's Note.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://michaelscottcohen.com"),

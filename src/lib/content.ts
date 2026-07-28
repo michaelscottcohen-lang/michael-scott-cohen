@@ -1,72 +1,100 @@
+export const KIT_FORM = "https://michael-scott-cohen.kit.com/8c7eab4ec7";
+export const KIT_SUBSCRIBE = "https://app.kit.com/forms/9737611/subscriptions";
+
 export const profile = {
   name: "Michael Scott Cohen",
   monogram: "MSC",
   location: "New York",
-  headline: "Builder. Operator. Investor.",
-  thesis: "I’ve spent my career turning ambitious ideas into physical products—and learning where the deck ends and the work begins.",
+  headline: "Founder, operator, and investor",
+  intro: "I’m a New York entrepreneur and operator. I’ve built in branded merchandise and CPG, and I’m now exploring what AI makes possible.",
 };
 
-export const receipts = [
-  {
-    year: "2014",
-    title: "Co-founded Harper+Scott",
-    body: "Built the creative merchandise agency with Jon Alagem, serving global brands through design, sourcing, production, and fulfillment.",
-    href: "https://www.harperandscott.com",
-    cta: "Harper+Scott",
-  },
-  {
-    year: "2023",
-    title: "Counselor Entrepreneurs of the Year",
-    body: "Michael and Jon were named Distributor Entrepreneurs of the Year by the Advertising Specialty Institute.",
-    href: "https://members.asicentral.com/news/web-exclusive/july-2023/distributor-entrepreneurs-of-the-year-2023-jon-alagem-michael-scott-cohen-harper-plus-scott/",
-    cta: "Read the profile",
-  },
-  {
-    year: "2025",
-    title: "Harper+Scott joined BDA",
-    body: "The next chapter: BDA acquired Harper+Scott, bringing the two businesses together around global merchandise and brand experience.",
-    href: "https://www.bdainc.com/blog/2025/09/16/promo-insiders-podcast-dives-deep-inside-bdas-acquisition-of-harper-scott/",
-    cta: "Hear the story",
-  },
-];
-
-export const fieldNotes = [
-  ["Objects over abstractions", "A physical product has nowhere to hide. It has to be designed, costed, made, moved, and wanted."],
-  ["Judgment compounds", "The useful pattern recognition comes from decisions made with incomplete information—and living with the result."],
-  ["Relationships are infrastructure", "Trust is not a soft asset. It is how hard things move when the timeline gets short."],
+export const proof = [
+  "3 exits",
+  "$57.5M Harper+Scott valuation reported by Business Insider",
+  "2023 ASI Entrepreneur of the Year",
 ] as const;
 
-export const proof = [
-  {
-    label: "Long-form conversation",
-    title: "Into the Metaverse",
-    source: "commonsku · Episode 216",
-    href: "https://commonsku.com/skucast/episode-216-into-the-metaverse-with-harperscotts-michael-scott-cohen",
-  },
-  {
-    label: "Industry recognition",
-    title: "Distributor Entrepreneurs of the Year",
-    source: "ASI Counselor Awards · 2023",
-    href: "https://members.asicentral.com/news/web-exclusive/july-2023/distributor-entrepreneurs-of-the-year-2023-jon-alagem-michael-scott-cohen-harper-plus-scott/",
-  },
-  {
-    label: "Company chapter",
-    title: "Inside BDA’s acquisition of Harper+Scott",
-    source: "BDA · Promo Insiders",
-    href: "https://www.bdainc.com/blog/2025/09/16/promo-insiders-podcast-dives-deep-inside-bdas-acquisition-of-harper-scott/",
-  },
+// Direct publication URLs verified through public search results on July 28, 2026.
+// ONE37pm is intentionally omitted: no original article/source URL could be verified.
+export const featuredIn = [
+  { publication: "Business Insider", href: "https://www.businessinsider.com/harper-scott-john-howard-lew-frankfort-coach-sephora-swag-2019-9" },
+  { publication: "ASI", href: "https://members.asicentral.com/news/web-exclusive/july-2023/distributor-entrepreneurs-of-the-year-2023-jon-alagem-michael-scott-cohen-harper-plus-scott/" },
+  { publication: "The Post and Courier", href: "https://www.postandcourier.com/news/charleston-waffle-house-waitress-recognized-by-ceo-long-time-customers-for-her-service/article_1fb0d832-ef5f-11e8-8438-c3126724d82a.html" },
+] as const;
+
+export const companies = [
+  { name: "Harper+Scott", category: "Branded merchandise", detail: "Co-founded by Michael. Acquired by BDA in September 2025; Michael remains publicly involved with Harper+Scott and BDA." },
+  { name: "Local Weather", category: "CPG / sports drink", detail: "Co-founded by Michael. Acquired by Blue Monkey Beverage in March 2026." },
+  { name: "Cyndra", category: "AI", detail: "Investor and operator helping Cyndra turn real business workflows into working AI systems." },
 ] as const;
 
 export const socials = [
   { label: "Instagram", handle: "@michaelscottcohen_official", href: "https://www.instagram.com/michaelscottcohen_official/" },
-  { label: "LinkedIn", handle: "Michael Scott Cohen", href: "https://www.linkedin.com/in/mcohen3/" },
+  { label: "YouTube", handle: "@michaelscottcohen", href: "https://www.youtube.com/@michaelscottcohen/shorts" },
+  { label: "TikTok", handle: "@michaelscottcohen", href: "https://www.tiktok.com/@michaelscottcohen" },
+  { label: "LinkedIn", handle: "/in/mcohen3", href: "https://www.linkedin.com/in/mcohen3/" },
   { label: "X", handle: "@TheMichaelCohen", href: "https://x.com/TheMichaelCohen" },
 ] as const;
 
-export const KIT_FORM = "https://michael-scott-cohen.kit.com/8c7eab4ec7";
+// Titles/topics below are limited to text visible in the linked public results. No metrics or invented captions.
+export const watch = [
+  {
+    platform: "Instagram",
+    title: "There’s no magic follow-up that works every time.",
+    detail: "A short note on timing, changing the angle, and moving on when a prospect goes quiet.",
+    href: "https://www.instagram.com/michaelscottcohen_official/reel/Da-iSjlE3Hr/",
+    embed: "https://www.instagram.com/reel/Da-iSjlE3Hr/embed/",
+    kind: "instagram",
+  },
+  {
+    platform: "YouTube",
+    title: "Counselor’s 2023 Distributor Entrepreneurs",
+    detail: "Michael and Jon Alagem on starting Harper+Scott, recent projects, and what comes next.",
+    href: "https://www.youtube.com/watch?v=6JoOYOdqCXM",
+    embed: "https://www.youtube-nocookie.com/embed/6JoOYOdqCXM",
+    kind: "youtube",
+  },
+  {
+    platform: "TikTok",
+    title: "Reputation",
+    detail: "Watch on TikTok",
+    href: "https://www.tiktok.com/@michaelscottcohen/video/7657189322512141581",
+    kind: "link",
+  },
+  {
+    platform: "TikTok",
+    title: "Starting over and AI",
+    detail: "Watch on TikTok",
+    href: "https://www.tiktok.com/@michaelscottcohen/video/7666589108231343374",
+    kind: "link",
+  },
+] as const;
+
+// Exact opening text and direct URLs verified through public search results on July 28, 2026.
+export const linkedInPosts = [
+  {
+    excerpt: "I haven’t personally made $100 million. I’ve sold businesses collectively…",
+    href: "https://www.linkedin.com/posts/mcohen3_i-havent-personally-made-100-million-activity-7486782933283008512-kPlj",
+  },
+  {
+    excerpt: "I wish I had Delta Air Lines CEO Ed Bastian’s cell number.",
+    href: "https://www.linkedin.com/posts/mcohen3_i-wish-i-had-delta-air-lines-ceo-ed-bastian-activity-7483620137561161728-rWqi",
+  },
+  {
+    excerpt: "Norman is 97 years old. Born in 1929. He’s lived in Africa, California…",
+    href: "https://www.linkedin.com/posts/mcohen3_norman-is-97-years-old-born-in-1929-he-activity-7478811154841088000-XqeN",
+  },
+] as const;
+
+export const press = [
+  { publication: "Advertising Specialty Institute", title: "Distributor Entrepreneurs of the Year", href: "https://members.asicentral.com/news/web-exclusive/july-2023/distributor-entrepreneurs-of-the-year-2023-jon-alagem-michael-scott-cohen-harper-plus-scott/" },
+  { publication: "Business Insider", title: "Harper+Scott’s outside investment and valuation", href: "https://www.businessinsider.com/harper-scott-john-howard-lew-frankfort-coach-sephora-swag-2019-9" },
+  { publication: "PR Newswire", title: "Blue Monkey Beverage acquires Local Weather", href: "https://www.prnewswire.com/news-releases/blue-monkey-beverage-acquires-local-weather-sports-drink-302702909.html" },
+] as const;
+
 export const nav = [
-  { label: "Story", href: "#story" },
-  { label: "Receipts", href: "#receipts" },
-  { label: "Notes", href: "#notes" },
-  { label: "Elsewhere", href: "#elsewhere" },
-];
+  { label: "Watch", href: "#watch" },
+  { label: "Read", href: "#read" },
+  { label: "Follow", href: "#follow" },
+] as const;
