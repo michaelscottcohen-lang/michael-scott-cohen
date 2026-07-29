@@ -20,25 +20,30 @@ export default function Home() {
             <p className="kicker">Michael Scott Cohen</p>
             <h1>I build companies.<br /><em>Then I share what worked.</em></h1>
             <p className="intro">{profile.intro}</p>
+            <div className="hero-signup" aria-labelledby="signup-title">
+              <div className="signup-intro">
+                <p className="kicker">The Operator’s Note</p>
+                <h2 id="signup-title">Notes from inside the work.</h2>
+                <p>One real decision from building, operating, investing in, or selling companies.</p>
+              </div>
+              <InlineSignup />
+              <small>Free. Submitted securely to Kit. Unsubscribe anytime.</small>
+            </div>
           </div>
-          <aside className="signup-card" aria-labelledby="signup-title">
-            <p className="kicker">The Operator’s Note</p>
-            <h2 id="signup-title">Notes from inside the work.</h2>
-            <p>One real decision from building, operating, investing in, or selling companies. What worked, what didn’t, and what I’d do now.</p>
-            <InlineSignup />
-            <small>Free. Submitted securely to Kit. Unsubscribe anytime.</small>
-          </aside>
-          <div className="featured-in" aria-label="Featured in">
-            <span>Featured in</span>
-            {featuredIn.map((item) => <a key={item.publication} href={item.href} target="_blank" rel="noopener noreferrer">{item.publication} <Arrow /></a>)}
-          </div>
-          <div className="hero-socials" aria-label="Michael's social profiles">
-            {socials.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer">{social.label} <Arrow /></a>)}
+          <div className="hero-rail">
+            <div className="featured-in" aria-label="Featured in">
+              <span>Featured in</span>
+              {featuredIn.map((item) => <a key={item.publication} href={item.href} target="_blank" rel="noopener noreferrer">{item.publication} <Arrow /></a>)}
+            </div>
+            <div className="hero-socials" aria-label="Michael's social profiles">
+              <span>Follow</span>
+              {socials.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer">{social.label} <Arrow /></a>)}
+            </div>
           </div>
         </Shell>
       </header>
 
-      <section className="proof-strip" aria-label="Selected verified milestones"><Shell>{proof.map((item) => <p key={item}>{item}</p>)}</Shell></section>
+      <section className="proof-strip" aria-label="Selected verified milestones"><Shell>{proof.map((item) => <article key={item.label}><strong>{item.value}</strong><div><h2>{item.label}</h2><p>{item.detail}</p></div></article>)}</Shell></section>
 
       <section className="receipts" aria-labelledby="company-receipts"><Shell>
         <div className="receipts-head"><p className="kicker">Company receipts</p><h2 id="company-receipts">Built across merchandise, CPG, and AI.</h2></div>

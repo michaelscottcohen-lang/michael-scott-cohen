@@ -10,9 +10,9 @@ export const profile = {
 };
 
 export const proof = [
-  "3 exits",
-  "$57.5M Harper+Scott valuation reported by Business Insider",
-  "2023 ASI Entrepreneur of the Year",
+  { value: "3", label: "Exits", detail: "Companies built through acquisition" },
+  { value: "$57.5M", label: "Harper+Scott valuation", detail: "Reported by Business Insider" },
+  { value: "2023", label: "Entrepreneur of the Year", detail: "Advertising Specialty Institute" },
 ] as const;
 
 // Direct publication URLs verified through public search results on July 28, 2026.
