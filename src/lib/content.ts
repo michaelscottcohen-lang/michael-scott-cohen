@@ -1,6 +1,3 @@
-export const KIT_FORM = "https://michael-scott-cohen.kit.com/8c7eab4ec7";
-export const KIT_SUBSCRIBE = "https://app.kit.com/forms/9737611/subscriptions";
-
 export const profile = {
   name: "Michael Scott Cohen",
   monogram: "MSC",

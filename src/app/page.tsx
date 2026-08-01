@@ -1,14 +1,11 @@
+import Image from "next/image";
 import SiteNav from "@/components/site-nav";
-import { companies, featuredIn, KIT_FORM, KIT_SUBSCRIBE, linkedInPosts, press, profile, proof, socials, watch } from "@/lib/content";
+import SignupForm from "@/components/signup-form";
+import { companies, featuredIn, linkedInPosts, press, profile, proof, socials, watch } from "@/lib/content";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 const Shell = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => <div className={`shell ${className}`}>{children}</div>;
-const Signup = ({ label = "Get the next note" }: { label?: string }) => <a className="button" href={KIT_FORM} target="_blank" rel="noopener noreferrer">{label} <Arrow /></a>;
-const InlineSignup = () => <form className="inline-signup" action={KIT_SUBSCRIBE} method="post">
-  <label className="sr-only" htmlFor="hero-email">Email address</label>
-  <input id="hero-email" name="email_address" type="email" inputMode="email" autoComplete="email" placeholder="you@example.com" required />
-  <button type="submit">Subscribe free</button>
-</form>;
+
 
 export default function Home() {
   return <>
@@ -26,11 +23,23 @@ export default function Home() {
                 <h2 id="signup-title">Notes from inside the work.</h2>
                 <p>One real decision from building, operating, investing in, or selling companies.</p>
               </div>
-              <InlineSignup />
+              <SignupForm id="hero-email" />
               <small>Free. Submitted securely to Kit. Unsubscribe anytime.</small>
             </div>
           </div>
           <div className="hero-rail">
+            <figure className="hero-portrait">
+              <div className="hero-portrait-frame">
+                <Image
+                  src="/images/michael-hero-latest.jpg"
+                  alt="Michael Scott Cohen"
+                  width={1092}
+                  height={1440}
+                  priority
+                  sizes="(max-width: 800px) calc(100vw - 32px), 390px"
+                />
+              </div>
+            </figure>
             <div className="featured-in" aria-label="Featured in">
               <span>Featured in</span>
               {featuredIn.map((item) => <a key={item.publication} href={item.href} target="_blank" rel="noopener noreferrer">{item.publication} <Arrow /></a>)}
@@ -62,7 +71,7 @@ export default function Home() {
           <div className="short-grid">
             {watch.slice(2).map((item) => <a className="short-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.href}><span className="play" aria-hidden="true">▶</span><div><p className="platform">{item.platform}</p><h3>{item.title}</h3><span>{item.detail} <Arrow /></span></div></a>)}
           </div>
-          <div className="context-cta"><div><p className="kicker">Prefer email?</p><h2>Get Michael’s next note.</h2></div><Signup /></div>
+          <div className="context-cta"><div><p className="kicker">Prefer email?</p><h2>Get Michael’s next note.</h2></div><SignupForm id="context-email" variant="button" label="Get the next note" /></div>
         </Shell>
       </section>
 
@@ -87,7 +96,7 @@ export default function Home() {
         </Shell>
       </section>
 
-      <section id="subscribe" className="closing"><Shell><p className="kicker">The Operator’s Note</p><h2>One honest note.<br />Sent when there is<br />something worth saying.</h2><Signup label="Subscribe free" /><small>Secure signup hosted by Kit.</small></Shell></section>
+      <section id="subscribe" className="closing"><Shell><p className="kicker">The Operator’s Note</p><h2>One honest note.<br />Sent when there is<br />something worth saying.</h2><SignupForm id="closing-email" variant="button" /><small>Submitted securely to Kit. Unsubscribe anytime.</small></Shell></section>
     </main>
     <footer><Shell><strong>MSC.</strong><span>Michael Scott Cohen · New York</span><a href="#top">Back to top ↑</a></Shell></footer>
   </>;
