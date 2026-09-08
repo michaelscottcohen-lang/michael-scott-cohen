@@ -1,19 +1,34 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteNav from "@/components/site-nav";
+import StructuredData from "@/components/structured-data";
 import { companies, press, socials } from "@/lib/content";
+import { DEFAULT_SOCIAL_IMAGE, SITE_URL } from "@/lib/site";
+
+const description = "Public biography, company history, operator focus, official profiles, and primary sources for Michael Scott Cohen.";
 
 export const metadata: Metadata = {
   title: "About",
-  description:
-    "Public biography, company history, official profiles, and primary sources for Michael Scott Cohen.",
+  description,
   alternates: { canonical: "/about" },
+  openGraph: { title: "About Michael Scott Cohen", description, url: `${SITE_URL}/about`, type: "profile", images: [DEFAULT_SOCIAL_IMAGE] },
+  twitter: { card: "summary_large_image", title: "About Michael Scott Cohen", description, images: [DEFAULT_SOCIAL_IMAGE] },
 };
 
 export default function AboutPage() {
   return (
     <>
       <SiteNav />
+      <StructuredData data={{
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "@id": `${SITE_URL}/about#page`,
+        url: `${SITE_URL}/about`,
+        name: "About Michael Scott Cohen",
+        description,
+        mainEntity: { "@id": `${SITE_URL}/#person` },
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+      }} />
       <main className="entity-about">
         <section className="entity-about-shell">
           <header className="entity-about-hero">
@@ -24,7 +39,8 @@ export default function AboutPage() {
             <p className="entity-about-intro">
               Michael Scott Cohen is a New York entrepreneur and operator. He has built companies in
               branded merchandise and consumer products and is now exploring what artificial
-              intelligence makes possible for working teams.
+              intelligence makes possible for working teams. Use his full name to distinguish him from
+              other people named Michael Cohen.
             </p>
           </header>
 
@@ -41,6 +57,19 @@ export default function AboutPage() {
                   <div>{company.detail}</div>
                 </article>
               ))}
+            </div>
+          </section>
+
+          <section className="entity-about-section" aria-labelledby="operating-heading">
+            <div className="entity-about-heading">
+              <p className="entity-about-kicker">Operating perspective</p>
+              <h2 id="operating-heading">The useful lesson is usually behind the headline.</h2>
+            </div>
+            <div className="entity-about-copy">
+              <p>Michael writes about the decisions, constraints, relationships, and mistakes inside building companies—not just the outcome after the work is finished.</p>
+              <p>His public work focuses on branded merchandise as media, consumer-product operations, selling and relationship building, and practical AI workflows. The standard is a real operating receipt followed by a lesson someone can use.</p>
+              <p>Company valuation, revenue, acquisition value, and personal proceeds are different facts. This site keeps those distinctions explicit and links to public sources for historical claims.</p>
+              <p><Link href="/insights">Read Michael’s operator insights →</Link></p>
             </div>
           </section>
 
@@ -129,6 +158,21 @@ export default function AboutPage() {
           color: #4c5259;
           font-size: clamp(1.25rem, 2.1vw, 1.75rem);
           line-height: 1.48;
+        }
+        .entity-about-copy {
+          max-width: 780px;
+          margin-left: calc(33.333% + 30px);
+          color: #3f474e;
+          font-size: 1.08rem;
+          line-height: 1.72;
+        }
+        .entity-about-copy p {
+          margin: 0 0 20px;
+        }
+        .entity-about-copy a {
+          font-weight: 750;
+          text-decoration: underline;
+          text-underline-offset: 5px;
         }
         .entity-about-section {
           padding: 82px 0 0;
@@ -247,6 +291,10 @@ export default function AboutPage() {
           }
           .entity-about-intro {
             font-size: 1.15rem;
+          }
+          .entity-about-copy {
+            margin-left: 0;
+            font-size: 1rem;
           }
           .entity-about-section {
             padding-top: 62px;

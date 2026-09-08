@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import SiteNav from "@/components/site-nav";
 import SignupForm from "@/components/signup-form";
+import VideoFacade from "@/components/video-facade";
 import { companies, featuredIn, linkedInPosts, press, profile, proof, socials, watch } from "@/lib/content";
+import { insights } from "@/lib/insights";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 const Shell = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => <div className={`shell ${className}`}>{children}</div>;
@@ -35,7 +38,8 @@ export default function Home() {
                   alt="Michael Scott Cohen"
                   width={1092}
                   height={1440}
-                  priority
+                  preload
+                  fetchPriority="high"
                   sizes="(max-width: 800px) calc(100vw - 32px), 390px"
                 />
               </div>
@@ -56,7 +60,7 @@ export default function Home() {
 
       <section className="receipts" aria-labelledby="company-receipts"><Shell>
         <div className="receipts-head"><p className="kicker">Company receipts</p><h2 id="company-receipts">Built across merchandise, CPG, and AI.</h2></div>
-        <div className="receipt-grid">{companies.map((company) => <article key={company.name}><p>{company.category}</p><h3>{company.name}</h3><p>{company.detail}</p></article>)}</div>
+        <div className="receipt-grid">{companies.map((company) => <article key={company.name}><p>{company.category}</p><h3><Link href={company.href}>{company.name}</Link></h3><p>{company.detail}</p></article>)}</div>
       </Shell></section>
 
       <section id="watch" className="section watch-section">
@@ -64,7 +68,7 @@ export default function Home() {
           <div className="section-head"><p className="kicker">Watch Michael</p><h2>Recent conversations and short videos.</h2></div>
           <div className="video-grid">
             {watch.filter((item) => "embed" in item).map((item) => <article className="video-card" key={item.href}>
-              <div className="embed-wrap"><iframe src={item.embed} title={`${item.platform}: ${item.title}`} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+              <VideoFacade embed={item.embed} platform={item.platform} title={item.title} />
               <div className="card-copy"><p className="platform">{item.platform}</p><h3>{item.title}</h3><p>{item.detail}</p><a href={item.href} target="_blank" rel="noopener noreferrer">Watch original <Arrow /></a></div>
             </article>)}
           </div>
@@ -72,6 +76,16 @@ export default function Home() {
             {watch.slice(2).map((item) => <a className="short-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.href}><span className="play" aria-hidden="true">▶</span><div><p className="platform">{item.platform}</p><h3>{item.title}</h3><span>{item.detail} <Arrow /></span></div></a>)}
           </div>
           <div className="context-cta"><div><p className="kicker">Prefer email?</p><h2>Get Michael’s next note.</h2></div><SignupForm id="context-email" variant="button" label="Get the next note" /></div>
+        </Shell>
+      </section>
+
+      <section className="section home-insights">
+        <Shell>
+          <div className="section-head"><p className="kicker">Inside the work</p><h2>Practical ideas for founders and operators.</h2></div>
+          <div className="press-grid">
+            {insights.slice(0, 3).map((insight) => <Link href={`/insights/${insight.slug}`} key={insight.slug}><span>{insight.eyebrow}</span><h3>{insight.title}</h3><span>Read insight <Arrow /></span></Link>)}
+          </div>
+          <p className="home-insights-all"><Link href="/insights">Explore all insights <Arrow /></Link></p>
         </Shell>
       </section>
 

@@ -13,16 +13,18 @@ test("homepage publishes a canonical URL and Person entity graph", async () => {
 });
 
 test("crawler and discovery files exist", async () => {
-  const [robots, sitemap, llms] = await Promise.all([
+  const [robots, sitemap, llms, site] = await Promise.all([
     read("src/app/robots.ts"),
     read("src/app/sitemap.ts"),
     read("public/llms.txt"),
+    read("src/lib/site.ts"),
   ]);
   assert.match(robots, /GPTBot/);
   assert.match(robots, /OAI-SearchBot/);
   assert.match(robots, /ClaudeBot/);
   assert.match(robots, /Claude-SearchBot/);
-  assert.match(sitemap, /michaelscottcohen\.com/);
+  assert.match(sitemap, /SITE_URL/);
+  assert.match(site, /www\.michaelscottcohen\.com/);
   assert.match(llms, /Michael Scott Cohen/);
   assert.match(llms, /Primary sources/);
 });

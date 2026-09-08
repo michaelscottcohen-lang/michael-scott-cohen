@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Newsreader, Schibsted_Grotesk, IBM_Plex_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { DEFAULT_SOCIAL_IMAGE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 import "./v4.css";
+import "./content.css";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -34,10 +37,10 @@ const entityGraph = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://michaelscottcohen.com/#person",
+      "@id": `${SITE_URL}/#person`,
       name: "Michael Scott Cohen",
-      url: "https://michaelscottcohen.com/",
-      image: "https://michaelscottcohen.com/images/michael-hero-latest.jpg",
+      url: `${SITE_URL}/`,
+      image: `${SITE_URL}/images/michael-hero-latest.jpg`,
       description: DESCRIPTION,
       jobTitle: "Founder, operator, and investor",
       sameAs: [
@@ -64,26 +67,26 @@ const entityGraph = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://michaelscottcohen.com/#website",
-      url: "https://michaelscottcohen.com/",
+      "@id": `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
       name: "Michael Scott Cohen",
-      publisher: { "@id": "https://michaelscottcohen.com/#person" },
+      publisher: { "@id": `${SITE_URL}/#person` },
       inLanguage: "en-US",
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://michaelscottcohen.com/#profile",
-      url: "https://michaelscottcohen.com/",
+      "@id": `${SITE_URL}/#profile`,
+      url: `${SITE_URL}/`,
       name: TITLE,
-      isPartOf: { "@id": "https://michaelscottcohen.com/#website" },
-      mainEntity: { "@id": "https://michaelscottcohen.com/#person" },
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      mainEntity: { "@id": `${SITE_URL}/#person` },
       inLanguage: "en-US",
     },
   ],
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://michaelscottcohen.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
   title: {
     default: TITLE,
@@ -95,12 +98,14 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     type: "website",
     siteName: "Michael Scott Cohen",
-    url: "https://michaelscottcohen.com",
+    url: SITE_URL,
+    images: [{ url: DEFAULT_SOCIAL_IMAGE, width: 1200, height: 630, alt: "Michael Scott Cohen — builder, operator, and investor" }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
+    images: [DEFAULT_SOCIAL_IMAGE],
   },
   authors: [{ name: "Michael Scott Cohen" }],
   creator: "Michael Scott Cohen",
@@ -131,6 +136,7 @@ export default function RootLayout({
         className={`${newsreader.variable} ${schibsted.variable} ${plex.variable} grain antialiased`}
       >
         {children}
+        {process.env.VERCEL ? <Analytics /> : null}
       </body>
     </html>
   );

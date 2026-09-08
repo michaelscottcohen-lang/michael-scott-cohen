@@ -4,8 +4,11 @@
 
 ## Canonical pages
 
-- [Official website](https://michaelscottcohen.com/): Current overview, companies, public work, videos, and newsletter.
-- [About Michael Scott Cohen](https://michaelscottcohen.com/about): Concise public biography and identity references.
+- [Official website](https://www.michaelscottcohen.com/): Current overview, companies, public work, videos, and newsletter.
+- [About Michael Scott Cohen](https://www.michaelscottcohen.com/about): Concise public biography and identity references.
+- [Insights](https://www.michaelscottcohen.com/insights): Owned essays and practical operator frameworks.
+- [Companies](https://www.michaelscottcohen.com/companies): Public company records and source links.
+- [The Operator’s Note](https://www.michaelscottcohen.com/newsletter): Michael’s owned email newsletter.
 
 ## Public identity
 

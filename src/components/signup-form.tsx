@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { track } from "@vercel/analytics";
 
 type SignupFormProps = {
   id: string;
@@ -35,9 +36,11 @@ export default function SignupForm({ id, label = "Subscribe free", variant = "in
       form.reset();
       setStatus("success");
       setMessage(result.message || "You’re subscribed. Check your inbox to confirm.");
+      track("newsletter_signup", { placement: id, result: "success" });
     } catch (error) {
       setStatus("error");
       setMessage(error instanceof Error ? error.message : "Please try again.");
+      track("newsletter_signup", { placement: id, result: "error" });
     }
   }
 

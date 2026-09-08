@@ -1,3 +1,5 @@
+import { companies as companyPages } from "@/lib/company-pages";
+
 export const profile = {
   name: "Michael Scott Cohen",
   monogram: "MSC",
@@ -20,11 +22,12 @@ export const featuredIn = [
   { publication: "The Post and Courier", href: "https://www.postandcourier.com/news/charleston-waffle-house-waitress-recognized-by-ceo-long-time-customers-for-her-service/article_1fb0d832-ef5f-11e8-8438-c3126724d82a.html" },
 ] as const;
 
-export const companies = [
-  { name: "Harper+Scott", category: "Branded merchandise", detail: "Co-founded by Michael. Acquired by BDA in September 2025; Michael remains publicly involved with Harper+Scott and BDA." },
-  { name: "Local Weather", category: "CPG / sports drink", detail: "Co-founded by Michael. Acquired by Blue Monkey Beverage in March 2026." },
-  { name: "Cyndra", category: "AI", detail: "Investor and operator helping Cyndra turn real business workflows into working AI systems." },
-] as const;
+export const companies = companyPages.map((company) => ({
+  name: company.name,
+  category: company.category,
+  detail: company.homeDetail,
+  href: `/companies/${company.slug}`,
+}));
 
 export const socials = [
   { label: "Instagram", handle: "@michaelscottcohen_official", href: "https://www.instagram.com/michaelscottcohen_official/" },
@@ -91,7 +94,8 @@ export const press = [
 ] as const;
 
 export const nav = [
-  { label: "Watch", href: "#watch" },
-  { label: "Read", href: "#read" },
-  { label: "Follow", href: "#follow" },
+  { label: "About", href: "/about" },
+  { label: "Insights", href: "/insights" },
+  { label: "Companies", href: "/companies" },
+  { label: "Watch", href: "/#watch" },
 ] as const;
