@@ -1,4 +1,4 @@
-.bookPage{--ink:#1a1a1a;--camel:#997747;--ivory:#f7f4ee;color:var(--ink);background:var(--ivory);font-size:17px}
+.bookPage{--ink:#1a1a1a;--camel:#997747;--ivory:#f7f4ee;--font-serif:var(--font-newsreader),Georgia,serif;--font-sans:var(--font-schibsted),Arial,sans-serif;--font-mono:var(--font-plex),monospace;color:var(--ink);background:var(--ivory);font-family:var(--font-sans);font-size:17px}
 .hero,.lessons,.teamSection,.signupSection,.footer{width:min(1160px,calc(100% - 64px));margin:0 auto}
 .hero{display:grid;grid-template-columns:1.13fr 1fr;gap:72px;padding:145px 0 64px;align-items:center}
 .eyebrow{text-transform:uppercase;font-weight:600;font-size:11px;letter-spacing:.13em;color:var(--camel);margin:0 0 20px}
