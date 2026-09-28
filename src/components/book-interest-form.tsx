@@ -11,12 +11,13 @@ declare global {
 
 // Kit's generated HTML embed for the dedicated book-interest form.
 // CK handles the real response, double opt-in, errors and any verification.
-// No newsletter subscription or payment is submitted by this form.
+// Michael's approved signup includes book updates and The Operator's Note.
+// No payment is submitted by this form.
 const kitOptions = {
   settings: {
     after_subscribe: {
       action: "message",
-      success_message: "Thanks for your interest in the book. Check your inbox to confirm book updates from Michael Scott Cohen. No payment or reservation is required.",
+      success_message: "Thanks for your interest in the book. Check your inbox to confirm book updates and The Operator's Note, my weekly newsletter. No payment or reservation is required.",
       redirect_url: "",
     },
     analytics: {},
@@ -62,8 +63,8 @@ export default function BookInterestForm({ initialInterest = "individual" }: { i
                 <div><label htmlFor="book-quantity">Approximate quantity</label><select id="book-quantity" name="fields[book_quantity]" defaultValue=""><option value="">Not sure yet</option><option value="1-24">1–24 copies</option><option value="25-49">25–49 copies</option><option value="50-99">50–99 copies</option><option value="100-249">100–249 copies</option><option value="250+">250+ copies</option></select></div>
               </div>
             </details>
-            <button type="submit" data-element="submit"><span className={styles.buttonIdle}>Send me book updates</span><span className={styles.buttonBusy}>Submitting…</span></button>
-            <p className={styles.formNote}>By signing up, you agree to receive book news from Michael Scott Cohen and a reply about any team interest you share. Unsubscribe anytime. No payment is taken.</p>
+            <p className={styles.formNote}>You&apos;ll receive book updates and The Operator&apos;s Note, my weekly newsletter. We&apos;ll also follow up about any team interest you share. Unsubscribe anytime. No payment is taken.</p>
+            <button type="submit" data-element="submit"><span className={styles.buttonIdle}>Send me updates</span><span className={styles.buttonBusy}>Submitting…</span></button>
           </div>
           <p className={styles.kitCredit}><a href="https://kit.com/features/forms" target="_blank" rel="noopener noreferrer">Powered by Kit</a></p>
         </div>
