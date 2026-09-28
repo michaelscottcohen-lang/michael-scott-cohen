@@ -1,0 +1,64 @@
+.bookPage{--ink:#1a1a1a;--camel:#997747;--ivory:#f7f4ee;color:var(--ink);background:var(--ivory);font-size:17px}
+.hero,.lessons,.teamSection,.signupSection,.footer{width:min(1160px,calc(100% - 64px));margin:0 auto}
+.hero{display:grid;grid-template-columns:1.13fr 1fr;gap:72px;padding:145px 0 64px;align-items:center}
+.eyebrow{text-transform:uppercase;font-weight:600;font-size:11px;letter-spacing:.13em;color:var(--camel);margin:0 0 20px}
+.hero h1{font:400 clamp(42px,4.8vw,64px)/1.03 var(--font-serif);letter-spacing:-.035em;margin:0 0 26px}
+.hero h1 em,.bookPage h2 em{font-weight:400;color:var(--camel)}
+.subtitle{font-size:19px;line-height:1.5;max-width:410px;margin:0 0 22px}
+.intro{max-width:495px;font-size:17px;line-height:1.65;margin:0 0 26px;color:#44423d}
+.primaryLink{display:inline-flex;align-items:center;justify-content:space-between;gap:44px;padding:15px 22px;background:var(--ink);color:white;font-size:14px;font-weight:600;min-height:50px}
+.primaryLink:hover{background:#55432d;text-decoration:none}
+.releaseNote,.small{font-size:12px;line-height:1.6;color:#6d665b}
+.releaseNote{margin:13px 0 24px}
+.authorLine{border-top:1px solid #d8d0c3;padding-top:20px;display:flex;flex-direction:column;font-size:12px;gap:3px}
+.authorLine span{color:#6d665b}
+.bookStage{margin:0;background:linear-gradient(130deg,#ede4d4,#f1e9db);padding:48px 40px 28px;text-align:center}
+.cover{width:min(100%,330px);margin:auto;transform:rotate(-3deg);box-shadow:16px 24px 30px #5e4b3029;position:relative;isolation:isolate}
+.cover:before{content:"";position:absolute;inset:2px 0 -3px -6px;background:#e4dccb;border-left:2px solid #fbf8ee;z-index:-1}
+.cover img{display:block;width:100%;height:auto}
+.bookStage figcaption{font-size:10px;letter-spacing:.025em;color:#6d665b;margin:30px -15px 0}
+.numbers{display:flex;justify-content:center;gap:90px;border-top:1px solid #d8d0c3;border-bottom:1px solid #d8d0c3;padding:24px 32px}
+.numbers p{display:flex;align-items:center;gap:18px;margin:0}
+.numbers strong{font:400 43px/1 var(--font-serif);color:var(--camel)}
+.numbers span{font-size:12px;line-height:1.4}
+.signupSection{display:grid;grid-template-columns:1fr 1.05fr;gap:80px;padding:70px 0;scroll-margin-top:96px;border-bottom:1px solid #d8d0c3}
+.bookPage h2{font:400 clamp(34px,3.4vw,46px)/1.08 var(--font-serif);letter-spacing:-.025em;margin:0 0 22px}
+.signupSection>div>p:not(.eyebrow){max-width:375px}
+.signupSection .small{margin-top:22px}
+.lessons{padding:70px 0}
+.sectionIntro{color:#58524a;max-width:600px;margin:0 0 40px}
+.lessonGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.lessonGrid article{border-top:1px solid #d8d0c3;padding-top:23px}
+.lessonGrid article>span{font-size:10px;color:var(--camel);font-family:var(--font-mono)}
+.lessonGrid h3{font:400 25px/1.2 var(--font-serif);margin:17px 0 12px}
+.lessonGrid p{font-size:14px;color:#58524a;line-height:1.6}
+.authorNote{background:#17211f;color:var(--ivory);display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:64px max(32px,calc((100vw - 1160px)/2))}
+.authorNote .eyebrow,.authorNote em{color:#cbb58d}.authorNote p:not(.eyebrow){font-size:16px;line-height:1.7;margin-top:0;color:#e0dfd5}.authorNote .signature{font:400 24px var(--font-serif);margin:25px 0 0;color:var(--ivory)}
+.teamSection{padding:70px 0;display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.teamSection>div>p:not(.eyebrow){max-width:480px;color:#58524a;font-size:16px}
+.teamOffer{background:#ece5d8;padding:30px;border-top:2px solid var(--camel)}
+.teamOffer .teamPrice{font:400 37px var(--font-serif)!important;margin:0 0 12px;color:var(--ink)!important}
+.teamPrice span{display:block;font:500 12px var(--font-sans);margin-top:8px}
+.teamOffer p{font-size:14px!important}
+.textLink{font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:5px}
+.footer{display:flex;gap:25px;padding:25px 0;border-top:1px solid #d8d0c3;font-size:12px;background:transparent!important;color:var(--ink)!important}
+.footer>a:first-child{font:600 24px var(--font-serif)}.footer>a:last-child{margin-left:auto}
+.interestForm{align-self:center;position:relative}
+.interestForm label,.interestForm legend{font-size:12px;font-weight:600;display:block;margin-bottom:8px}
+.fieldRow{display:grid;grid-template-columns:1fr 1.4fr;gap:12px;margin-bottom:20px}
+.interestForm input,.interestForm select{display:block;width:100%;min-height:46px;border:1px solid #b9b0a1;border-radius:0;background:#fffcf7;color:var(--ink);font:400 15px var(--font-sans);padding:11px 12px}
+.interestForm input:focus,.interestForm select:focus{outline:2px solid var(--camel);outline-offset:2px}
+.interestForm fieldset{border:0;padding:0;margin:0 0 20px}
+.choices{display:flex;gap:24px}.choices label{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:400}
+.choices input{width:17px;height:17px;min-height:0;accent-color:var(--camel);margin:0}
+.interestForm button{width:100%;min-height:50px;border:0;border-radius:0;background:var(--ink);color:white;font:600 14px var(--font-sans);padding:14px 20px;cursor:pointer}
+.interestForm button:hover{background:#55432d}.interestForm button:disabled{opacity:.6;cursor:wait}
+.formNote{font-size:11px;color:#625b50;line-height:1.6;margin:12px 0 0}
+.formNote a{text-decoration:underline;text-underline-offset:2px}
+.optional{font-weight:400;color:#6d665b}.teamFields{margin:0 0 22px}.teamFields summary{font-size:12px;cursor:pointer;padding:0 0 14px}.teamFields .fieldRow{margin-bottom:0}.buttonBusy{display:none}.interestForm button[data-active] .buttonIdle{display:none}.interestForm button[data-active] .buttonBusy{display:inline}.kitErrors:empty{display:none}.kitErrors{color:#8a2b20;padding:12px 12px 12px 30px;background:#fae8df;font-size:14px}.kitCredit{font-size:10px;color:#71695e;margin:12px 0 0}.interestForm :global(.formkit-alert-success){background:#ece5d8;border-left:3px solid var(--camel);padding:20px;font-size:16px;line-height:1.6}.thanks h1{font:400 48px/1.08 var(--font-serif);letter-spacing:-.025em}
+.formStatus{font-size:14px;margin:15px 0;border-left:3px solid var(--camel);padding:8px 12px;background:#ece5d8}
+.error{color:#8a2b20;border-color:#8a2b20}
+.honeypot{position:absolute!important;left:-10000px;width:1px;height:1px;overflow:hidden}
+.thanks{max-width:700px;margin:auto;padding:160px 32px 110px;min-height:80vh}.thanks p{font-size:17px;line-height:1.65}.thanks .primaryLink{margin-top:18px}
+@media(max-width:960px){.hero{gap:38px}.bookStage{padding:35px 26px 22px}.numbers{gap:48px}.signupSection,.teamSection,.authorNote{gap:38px}.lessonGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.hero,.lessons,.teamSection,.signupSection,.footer{width:calc(100% - 40px)}.hero{padding:104px 0 36px;grid-template-columns:1fr;gap:35px}.hero h1{font-size:45px;max-width:470px}.hero .subtitle{font-size:18px}.hero .intro{font-size:16px}.authorLine{display:none}.bookStage{padding:32px 36px 24px;max-width:470px;width:100%;margin:auto}.cover{max-width:265px}.bookStage figcaption{font-size:10px}.releaseNote{margin-bottom:0}.numbers{gap:0;justify-content:space-between;padding:22px 20px}.numbers p{display:block;flex:1}.numbers strong{font-size:33px}.numbers span{display:block;font-size:10px;margin-top:6px}.signupSection,.teamSection,.authorNote{grid-template-columns:1fr;gap:25px;padding:45px 0}.signupSection{scroll-margin-top:88px}.signupSection .small{margin:10px 0 0}.bookPage h2{font-size:36px}.fieldRow{grid-template-columns:1fr}.lessons{padding:45px 0}.lessonGrid{gap:20px}.lessonGrid h3{font-size:23px}.lessonGrid p{font-size:13px}.authorNote{padding:44px 24px}.teamOffer{padding:25px}.footer{flex-wrap:wrap;gap:12px}.footer>a:last-child{width:100%;margin:0}.teamSection{padding-bottom:45px}}
