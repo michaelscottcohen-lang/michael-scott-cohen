@@ -1,0 +1,251 @@
+20 AI Prompts for Selling Branded Merch
+
+Michael Scott Cohen | So You Want to Sell Branded Merch
+
+How to use these
+
+Pick the job you need to do. Copy the prompt and replace the bracketed instructions with your own information. The input line tells you what to gather. If something is unknown, say so. Give the tool a few examples of your writing when you want it to sound like you.
+
+Use your company's approved AI tools and only information you are permitted to put into them. Research needs accessible sources or material you supply. If a file or link cannot be read, the tool should tell you. Open important sources yourself, verify the facts and recalculate the numbers before you use an answer. A polished draft still needs your review and the company's actual approvals.
+
+Try the first answer, explain what it missed and improve the instruction. These prompts are starting points, not automatic messages or approved commitments. Save the version that works for your job. Tool features and access vary; the included resource does not include an AI subscription.
+
+Prompt 1: Build a prospect list worth working
+
+Start with a niche your team can serve, then find a reason to call.
+
+Have ready: Niche, geography, team capabilities and company sources or a research tool with web access.
+
+Copy and adapt:
+
+I sell branded merchandise, and I want to go deeper in [niche] in [geography]. Here is what our team does well: [capabilities]. Help me find up to 15 companies with a relevant opening, such as an acquisition, new location, event, product launch or employee initiative. Use current public sources and give me the source and date for each fact. For each company, explain why we might be useful, which department to investigate and what I still need to learn. Separate the actual event from your suggested merch opportunity. If you can't verify 15, give me fewer. Don't make the list look complete by making things up.
+
+Before you use it: An acquisition is a reason to investigate. It is not a confirmed merch budget.
+
+Prompt 2: Find the person behind the opportunity
+
+The person buying merch usually has another job title.
+
+Have ready: Target company, buying occasion, public team information and a permitted contact export.
+
+Copy and adapt:
+
+I'm going after [company] for [occasion]. Help me work out who might own this project. Use [company sources] and [permitted contact list]. Consider the events, marketing, loyalty, HR or purchasing team based on the actual need. Show confirmed names and roles separately from roles we still need to find. If my contacts suggest a possible introduction, tell me what to verify before asking. Don't assume a LinkedIn connection means a close relationship. Don't guess email addresses. Give me a short introduction request that explains why the conversation could be useful to the person receiving it.
+
+Before you use it: Verify the person's current role and your relationship with the proposed introducer.
+
+Prompt 3: Write an opening someone can answer
+
+Give the buyer a reason to talk before sending the company history.
+
+Have ready: Verified company trigger, buyer role, a relevant capability and your writing samples.
+
+Copy and adapt:
+
+Help me write a first email to [person and role] at [company]. Here is what caught my attention: [verified fact]. Here is how our team could help: [supported capability or relevant work]. Keep it under 100 words. Start with their business and ask one useful question about how they handle this need. Make it sound like someone who would be good to work with. Use [writing samples] for my tone. Give me two subject lines and one email. Don't add compliments I haven't earned the right to give, client names I didn't supply or a fake relationship. I want to start a conversation.
+
+Before you use it: Would this person know why you chose them after reading the first two sentences?
+
+Prompt 4: Make the next follow-up useful
+
+Keep reaching out with something connected to the buyer's situation.
+
+Have ready: Outreach history, actual replies, current date and known planning dates.
+
+Copy and adapt:
+
+Here is my outreach history with [prospect], including what they actually said: [history]. Today is [date]. Help me decide the next useful contact. If they gave us a planning date, work around it. If they haven't replied, suggest a relevant reason to return and when to pause this sequence. Respect a request to stop. Draft the next message in my tone, then outline two possible follow-ups that depend on what happens next. Use a real resource or idea we can provide. Don't send three versions of 'just checking in.' Mark any sample or information I need to prepare before I make the offer.
+
+Before you use it: A planned follow-up belongs on your calendar. It is not a scheduled or sent message.
+
+Prompt 5: Get ready for the meeting
+
+Walk in knowing enough to ask better questions.
+
+Have ready: Meeting purpose, attendee list, prior conversations and dated company sources.
+
+Copy and adapt:
+
+I'm meeting [company] on [date] with [attendees and known roles]. Here are the meeting purpose, earlier conversations and company sources: [materials]. Give me a one-page brief I can read before I walk in. Explain the brand, its customers, relevant initiatives and what we already know about this project. Cite current business facts and dates. Identify possible goals or KPIs as questions to confirm, not facts about the buyer. Suggest five questions worth asking and samples from [our actual work] that could make the conversation useful. Include one adjacent capability to bring in case the meeting goes somewhere unexpected.
+
+Before you use it: Check the attendees and dates. Bring the extra capability because it fits, not just because you have it.
+
+Prompt 6: Understand the client's competitors
+
+Learn the market the buyer operates in before recommending what their brand should make.
+
+Have ready: Client brand, named competitors, campaign or store links and the buyer's brief.
+
+Copy and adapt:
+
+I'm preparing to meet [client], whose competitors include [brands]. Using [public sources], compare how these brands show up through merchandise, gifts with purchase, influencer mailers, stores and events where evidence is available. Include sources and dates. Show what is distinctive about each brand's audience, design and product choices. Tell me what we cannot establish from public information. Suggest three questions for my client and two directions worth exploring for their own identity. Don't copy another brand's concept or claim a campaign performed well without results. I want to understand where the client could do something that makes sense for them.
+
+Before you use it: A public product or campaign shows what existed. It does not establish sales, ROI or the supplier behind it.
+
+Prompt 7: Compare us fairly with another supplier
+
+Find a useful role without making assumptions about the company already doing the work.
+
+Have ready: Your approved capabilities, the other supplier's public materials and permitted buyer feedback.
+
+Copy and adapt:
+
+The buyer works with [supplier]. Compare [our approved capabilities] with [their public materials] and [what the buyer has actually told us]. Focus on the needs in this brief: [brief]. Show what each company can substantiate, what is only a marketing claim and what remains unknown. Look at relevant creative work, service, sourcing, stores and fulfillment. Don't treat something missing from a website as a missing capability. Identify where we may have a useful role and the evidence we need to support that. Give me four respectful questions about what the buyer would like to improve. Don't invent a problem with their current supplier.
+
+Before you use it: Use the comparison to prepare questions. Verify any claim before putting it in a client deck.
+
+Prompt 8: Practice asking before you sell
+
+Get comfortable letting an answer change your recommendation.
+
+Have ready: A fictional buyer request, such as water bottles for an event.
+
+Copy and adapt:
+
+Let's practice a discovery call. Play a fictional buyer who starts by saying, '[request].' Create a realistic situation, but don't tell me the full brief yet. Answer my questions one at a time. Give me a chance to learn why you want merch, who receives it, what worked before, your goals, budget, timing and decision process. If I jump straight to products, behave like a buyer who still wants to be understood. After I play the brief back and ask for a next step, stop. Tell me what I learned, what I assumed and which question I should have asked. Don't give me the answers before I try.
+
+Before you use it: Keep the exercise fictional. The real buyer gets to supply the real brief.
+
+Prompt 9: Turn the conversation into a clear brief
+
+Keep the client's actual words separate from your interpretation.
+
+Have ready: Notes or a transcript you are permitted to use, with speaker names where known.
+
+Copy and adapt:
+
+Turn [meeting notes] into a working merch brief. Capture the audience, purpose, desired result, quantity, budget and what it includes, in-hands date, destinations, product preferences, approvers and next steps. Tie important details to the note or speaker that supports them. Separate confirmed decisions, preferences and unanswered questions. 'We may have 200 guests' is not an order for 200 units. Flag contradictions instead of choosing whichever answer is easier. Finish with a short recap in my tone that I can send to the client, with owners and dates only where agreed. Ask the most important missing question first.
+
+Before you use it: Read the brief against the notes before updating the CRM or sending the recap.
+
+Prompt 10: Give sourcing a brief they can work with
+
+Use your suppliers' knowledge and leave room for an idea you haven't considered.
+
+Have ready: Confirmed brief, brand guidance, budget scope and any verified product information.
+
+Copy and adapt:
+
+Here is the client brief: [brief]. Develop three product directions that fit the audience and goal, including the requested category and one adjacent option if there is a good reason. Explain each recommendation. Consider decoration, labels, packaging and how the recipient will use or carry it. Mark everything that still needs supplier confirmation. Don't invent products, prices, inventory or lead times. Then draft a supplier inquiry with quantity, budget scope, artwork needs and the in-hands date. Ask what they would show that we may have missed, including options their website doesn't show. Ask what custom work is feasible before recommending it.
+
+Before you use it: An interesting idea still needs a real product, available stock and a workable production plan.
+
+Prompt 11: Make the deck useful in the room
+
+Help the buyer explain the recommendation when you aren't there.
+
+Have ready: Approved brief, verified options and quotes, brand guidelines and sample status.
+
+Copy and adapt:
+
+Use [brief], [verified product options and quotes] and [brand guidelines] to plan a concise client deck. Lead with the audience and goal, then make a recommendation. For each option, explain why it belongs, what the branding could look like, quantity, complete quoted scope, the next price break and the change in total spend. Show confirmed lead times, the approval deadline and anything still estimated. Include notes the buyer can use with their boss. Label concept images as concepts, not production proofs. Leave missing information visible. Finish with questions about samples, what resonates and what may have changed since our last conversation.
+
+Before you use it: Check every number and date. Use your design team to make the actual deck reflect the brand.
+
+Prompt 12: Check the quote before the client does
+
+A lower unit price and a lower total are two different things.
+
+Have ready: Quote, brief, quantity tiers and approved assumptions; internal costs only if permitted.
+
+Copy and adapt:
+
+Review [quote] against [brief]. Recalculate extensions and totals, showing the arithmetic. Check decoration, setup, packaging, assembly, freight and the stated tax treatment. Use only supplied rates and assumptions. Flag costs that are missing or unclear, especially when the budget must cover everything. For each quantity break, show both the unit price and the change in total spend. Check quote validity, exclusions and changes that would require approval. If I include permitted internal costs, calculate gross profit and margin separately from the client quote and keep them internal. Finish with the questions I need answered before this is ready to send.
+
+Before you use it: Independently verify the arithmetic and charges. AI cannot supply a missing vendor cost or tax decision.
+
+Prompt 13: Decide whether the RFP deserves the work
+
+A faster response is useful only when the opportunity is worth pursuing.
+
+Have ready: Full RFI/RFP package and addenda, approved capabilities, permitted buyer context and team capacity.
+
+Copy and adapt:
+
+Help me decide whether to pursue [RFI or RFP]. Use the full bid package, addenda, [approved capabilities] and [buyer context]. First list the files and sections you could read and anything missing or unreadable. Identify mandatory qualifications, deadlines, commercial obligations and permitted ways to ask questions or meet. Cite the document and page or section for each requirement. Compare it with evidence of what our team can deliver. Assess whether there is a relationship or a permitted chance to build one, a reason to choose us and a workable use of team time. Recommend pursue, clarify or pass, with reasons and the facts that could change the recommendation.
+
+Before you use it: A missing mandatory requirement needs a real decision with the delivery team, not a better paragraph.
+
+Prompt 14: Check every RFP answer against the request
+
+Catch unanswered questions and promises the evidence doesn't support.
+
+Have ready: Complete bid package and addenda, draft response, pricing file, attachments and evidence.
+
+Copy and adapt:
+
+Check [our draft response] against [the complete RFP package], including addenda, pricing schedules and attachments. List what you could read and what you could not. Build a table with one row for every requirement: exact question, source location, our answer location, supporting evidence, status and needed correction. Use answered, partial, missing, contradictory or cannot verify. Check submission instructions, required forms and answers that disagree with pricing or service commitments elsewhere. Flag unsupported claims about facilities, certifications, capacity, clients or response times. Prioritize corrections that could make the bid noncompliant. Don't call the review complete if any required file or section is missing or unreadable.
+
+Before you use it: Reconcile the table with the original package, including forms and spreadsheets. A missing row is easy to overlook.
+
+Prompt 15: Read the RFP response like the buyer
+
+A complete answer can still leave the buyer wondering why they should choose you.
+
+Have ready: RFP evaluation criteria, buyer brief, draft response and approved evidence.
+
+Copy and adapt:
+
+Read [our response] from the buyer's perspective, using [their brief and evaluation criteria]. Tell me where we answer the question clearly and where we make the buyer work too hard. Flag generic claims, weak product-to-brand fit and statements that need proof. Don't assume we deserve to win. Pick the five changes that would most improve the response. For each, show the current passage, what is missing and a tighter version using only [approved evidence]. If the evidence doesn't exist, name what we need instead of writing around the gap. Use published scoring weights only if provided, and don't invent a probability of winning.
+
+Before you use it: The rewritten answer still needs the relevant team to confirm every commitment.
+
+Prompt 16: Practice the price conversation
+
+Learn what the buyer is comparing before you offer a discount.
+
+Have ready: A fictional scenario or anonymized quotes you may use, plus your actual authority to make changes.
+
+Copy and adapt:
+
+Play the buyer in a practice conversation about [proposal]. Start with, 'Your price is higher.' Use [scenario or permitted comparison]. Don't reveal all the details until I ask. Let me work out whether the issue is a fixed budget, different scope or something else. Respond naturally and ask follow-up questions. Don't make the buyer agree just because I gave a confident answer. When I say 'review,' tell me whether I clarified the comparison, explained value with evidence and agreed on a useful next step. Point out any concession or promise beyond [my authority]. Then let me try the difficult part again.
+
+Before you use it: Practice within your actual authority. A good exchange may lead to clarification rather than an immediate sale.
+
+Prompt 17: Help the buyer get the order approved
+
+Give your contact something they can use with the next decision maker.
+
+Have ready: Buyer goal, selected option, current quote and known approval steps.
+
+Copy and adapt:
+
+My contact likes [option] but needs [known approvals]. Using [brief and quote], write a short recommendation they can forward internally. Explain the purpose, audience fit, total and what's included, timing conditions and the exact decision being requested. Distinguish agreeing on the product direction from authorizing the expense and releasing production. List open questions and who needs to answer them, using confirmed roles only. Make the note easy for my contact to present in their own meeting. Don't imply artwork, budget, inventory or delivery is approved when it isn't. End with one clear next step.
+
+Before you use it: Give the buyer the information their process requires, then obtain the company's actual approvals.
+
+Prompt 18: Keep the client informed during delivery
+
+Be easy to reach when the order is going well and when something changes.
+
+Have ready: Current production or carrier update, confirmed facts, open questions and verified options.
+
+Copy and adapt:
+
+Here is the latest on [order]: [dated update and source]. Help me write a proactive client update in my tone. Say what we know, what we are checking and when I will update them next, using a time I can commit to: [time]. If everything is on track, share the confirmed progress. If there is a problem, explain its impact and the options our team has actually verified. Put unverified recovery ideas in separate internal notes with the person who needs to check them. Don't invent a tracking scan, blame a supplier without facts or promise a delivery date we haven't confirmed. Draft the message for my review.
+
+Before you use it: Confirm the status with the people doing the work. A label created is not the same as goods picked up.
+
+Prompt 19: Find the next project in the account
+
+Use what you learned from the last order to start the next useful conversation.
+
+Have ready: Order history, client feedback, account contacts and known buying calendar.
+
+Copy and adapt:
+
+Review [account history and client feedback]. Suggest three relevant next conversations based on what we learned, including a possible introduction to another department if there is a good reason. Separate the client's stated plans from ideas we still need to ask about. Check the buying date as well as the event date. Consider whether recurring orders suggest a store conversation, without assuming a store is the answer. Draft one friendly follow-up and one short introduction note my contact could forward. Keep unfinished service issues visible so we deal with them before asking for more work. Don't invent results or turn a planning estimate into committed revenue.
+
+Before you use it: Make sure the next conversation helps the client and doesn't leave the current buyer feeling forgotten.
+
+Prompt 20: Turn your point of view into content
+
+Give people a reason to know how you think before they have a project.
+
+Have ready: Your voice note, original writing samples and facts or examples you may share.
+
+Copy and adapt:
+
+Turn [my voice note] into a LinkedIn post for people who buy branded merchandise. Here are [my writing samples] and [facts I can share]. Keep my opinion and the specific lesson. Make the opening worth reading, but don't force a dramatic hook. Use normal paragraphs, contractions and humor only where it fits. No em dashes, made-up analogies, invented conversations, client names or results. If the story needs a missing detail, ask me instead of filling it in. Cut anything I wouldn't say across the table to a client. Finish with a question only if it would start a useful conversation. I want it to sound like me.
+
+Before you use it: Read it aloud and confirm that the experience and opinion are yours before publishing.
